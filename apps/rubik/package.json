@@ -1,0 +1,52 @@
+{
+	"name": "admin",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "run-p type-check \"build-only {@}\" --",
+		"preview": "vite preview",
+		"test:unit": "vitest",
+		"test:e2e": "playwright test",
+		"build-only": "vite build",
+		"type-check": "vue-tsc --build --force",
+		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+		"format": "prettier --write src/"
+	},
+	"dependencies": {
+		"@packages/helps": "workspace:^",
+		"@packages/hooks": "workspace:^",
+		"@packages/router": "workspace:^",
+		"@packages/stores": "workspace:^",
+		"gsap": "^3.12.7",
+		"pinia": "catalog:vue3.4",
+		"pinia-plugin-persistedstate": "catalog:vue3.4",
+		"three": "^0.173.0",
+		"vue": "catalog:vue3.4",
+		"vue-router": "catalog:vue3.4"
+	},
+	"devDependencies": {
+		"@playwright/test": "catalog:vite5",
+		"@tsconfig/node20": "^20.1.4",
+		"@types/jsdom": "^21.1.7",
+		"@types/node": "^20.14.5",
+		"@types/three": "^0.173.0",
+		"@vitejs/plugin-vue": "catalog:vite5",
+		"@vitejs/plugin-vue-jsx": "catalog:vite5",
+		"@vue/test-utils": "^2.4.6",
+		"@vue/tsconfig": "^0.5.1",
+		"jsdom": "^24.1.0",
+		"npm-run-all2": "^6.2.0",
+		"prettier": "^3.2.5",
+		"sass": "^1.85.1",
+		"sass-loader": "^16.0.5",
+		"typescript": "~5.4.0",
+		"vite": "catalog:vite5",
+		"vite-plugin-compression": "catalog:vite5",
+		"vite-plugin-mock": "catalog:vite5",
+		"vite-plugin-vue-devtools": "catalog:vite5",
+		"vitest": "catalog:vite5",
+		"vue-tsc": "^2.0.21"
+	}
+}

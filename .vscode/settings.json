@@ -1,0 +1,56 @@
+{
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+
+	"stylelint.enable": true,
+	"stylelint.packageManager": "pnpm",
+	"stylelint.validate": ["css", "less", "postcss", "scss", "vue"],
+	"stylelint.snippet": ["css", "less", "postcss", "scss", "vue"],
+
+	"typescript.inlayHints.enumMemberValues.enabled": true,
+	"typescript.preferences.preferTypeOnlyAutoImports": true,
+	"typescript.preferences.includePackageJsonAutoImports": "on",
+
+	"eslint.validate": [
+		"javascript",
+		"typescript",
+		"javascriptreact",
+		"typescriptreact",
+		"vue",
+		"html",
+		"markdown",
+		"json",
+		"jsonc",
+		"json5"
+	],
+
+	"tailwindCSS.experimental.classRegex": [
+		["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+	],
+	"editor.guides.bracketPairs": "active", // 控制是否启用。active: 仅为活动括号对启用水平参考线
+	"editor.guides.bracketPairsHorizontal": "active",
+	"cSpell.words": [
+		"gsap",
+		"lefthook",
+		"persistedstate",
+		"raycaster",
+		"vueuse"
+	], // 控制是否启用水平括号对指南。active: 仅为活动括号对启用水平参考线
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"tsconfig.json": "tsconfig.*.json, env.d.ts",
+		"vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+		"package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*",
+		".gitignore": ".gitignore,commitlint.config.*,lefthook.yml",
+		".npmrc": ".npmrc,.nvmrc",
+		"eslint.config.*": ".eslint*, eslint*, .prettier*, prettier*,stylelint.config.*,"
+	},
+	// 控制字体系列。
+    "editor.fontFamily": "'Cascadia Code', Consolas, Menlo, Monaco, 'Courier New', monospace",
+	// 以像素为单位控制字号。
+	"editor.fontSize": 14,
+	// 控制字体粗细。
+	"editor.fontWeight": "normal",
+	"editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+}

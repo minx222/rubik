@@ -1,0 +1,21 @@
+# temp
+temp
+.DS_Store
+
+# test
+coverage
+.idea
+
+# dev
+.env
+node_modules
+
+# analyzer
+analyzer.html
+
+# build
+dist
+
+
+# dev
+playwright-report

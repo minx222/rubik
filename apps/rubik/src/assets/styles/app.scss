@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  @apply m-0 p-0;
+}
+
+html,
+body {
+  @apply w-full h-full;
+}
+
+#app {
+  @apply relative min-h-full;
+}
+
+#app {
+  @apply grid place-content-center;
+  background: linear-gradient(#141e30, #243b55);
+}
